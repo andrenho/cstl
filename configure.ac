@@ -6,9 +6,10 @@ AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([foreign subdir-objects 1.13])
 #AM_GNU_GETTEXT([external])
 AC_PREREQ([2.69])			# minimal autoconf version
-AC_CONFIG_SRCDIR([src/array.c])   	# test if file exists
+AC_CONFIG_SRCDIR([cstl/array.c])   	# test if file exists
 AC_CONFIG_MACRO_DIRS([build/m4])
 AM_SILENT_RULES([yes])
+AC_PROG_RANLIB
 
 # 
 # check for compiler info
