@@ -21,6 +21,10 @@ int main()
     int y = 18; c_set(a, 3, &y);
     c_get(a, 3, &x); asti(x, 18);
 
+    c_front(a, &x); asti(x, 0);
+    y = 24; c_set(a, 9, y);
+    c_back(a, &x); asti(x, 24);
+
     c_free(a);
     return 0;
 }

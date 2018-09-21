@@ -74,4 +74,20 @@ c_array_data(cArray* a)
     return a->data;
 }
 
+//
+// CAPACITY
+//
+
+bool
+c_empty(cArray* a)
+{
+    return a->size == 0;
+}
+
+int
+c_size(cArray* a)
+{
+    return a->size;
+}
+
 // vim: ts=4:sw=4:sts=4:expandtab:foldmethod=marker
